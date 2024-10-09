@@ -4,6 +4,17 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body {
+    /*100% da largura da tela*/
+    width: 100vw;
+    /*100% de altura da tela*/
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Evitar rolagem indesejada*/
+    overflow-x: hidden;
+}
 
 .header {
   display: grid;
@@ -86,6 +97,7 @@ nav ul li {
 nav ul li a {
     color: #000;
     text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     transition: color 0.3s;
 }
@@ -136,7 +148,9 @@ nav ul li a:hover {
 
 .conteudo .sec {
     width: 100%;
-    max-width: 800px; ;
+    max-width: 800px;
+    font-size: x-large;
+    height: 100vh;
     padding: 20px;
     border: 1px solid;
 }
