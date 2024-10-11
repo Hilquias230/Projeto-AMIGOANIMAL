@@ -62,7 +62,7 @@ body {
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #348D52;
+    background-color: #fff;
     /* border: 1px solid; */
     height: 43vh;
     width: 60vw;
