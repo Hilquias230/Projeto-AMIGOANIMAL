@@ -16,25 +16,28 @@ body {
 
 
 .header {
-    display: grid;
+    display: flex; /* Alinhamento flexível */
+    align-items: center; /* Centraliza verticalmente */
     background-color: #DEB887;
     color: #ffffff;
     padding: 15px;
-    width: 208vw;
-    height: 30vh;
-    position: relative;
 }
 
-.header h1 {
-    font-family: Verdana, Sans-Serif;
-    font-size: 24px;
-    margin: 0;
+ h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 74px;
+    position: relative;
+    right: -20%;
+    color: #FFEBCD;
+    
 }
 
 .logo {
     width: 100px;
     height: auto;
     margin-bottom: 10px;
+    /* border: 5px solid; */
+    display: inline-block;
 }
 
 .menu-icon {
@@ -72,9 +75,9 @@ body {
 
 nav {
     display: none;
-    background-color: #f4f4f4;
+    background-color: #FFEBCD;
     padding: 10px;
-    top: 60px;
+    top: 40px;
     left: 75%;
     width: 170px;
     border-radius: 5px;
@@ -128,33 +131,37 @@ nav ul li a:hover {
 
 .carrossel {
     margin-bottom: 40px;
+    width: 100%; 
+   
 }
 
 .carrossel-container {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    width: 200%; /* Permite que o contêiner ocupe toda a largura disponível */
+    height: 290px;
+    overflow-x: auto; /* Habilita rolagem horizontal */
     gap: 10px;
-    /* border: 1px solid; */
-    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory; /* Rolagem suave e alinhada */
 }
 
 .carrossel-container img {
-    width: 498px;
-    height: 290px;
-    object-fit: cover;
+    object-fit: cover; /* Mantém a proporção da imagem */
     border-radius: 8px;
-    border: 1px solid;
     scroll-snap-align: center;
     margin-top: 14px;
+    width: 30%; /* Define uma largura fixa para as imagens */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    flex-shrink: 0; /* Evita que as imagens se comprimam */
 }
+
 
 .conteudo {
     display: flex;
     flex-direction: column;
     background-color: #f4f4f4;
     border-radius: 8px;
-    width: 75%;
+    width: 90%;
     align-items: center;
     margin-right: 20px;
     padding: 20px;
@@ -163,6 +170,7 @@ nav ul li a:hover {
 .conteudo .sec {
     width: 100%;
     max-width: 800px;
+    height: 190vh;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
@@ -177,9 +185,11 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin-left: 80%;
-    margin-top: -210px;
+    position: absolute; 
+    top: 76%; 
+    right: 0;
+    margin-top: 0; 
+    margin-left: 0; 
 }
 
 .footer {
@@ -223,9 +233,17 @@ nav ul li a:hover {
         height: auto;
     }
 
+    .carrossel-container {
+        overflow-x: auto; /* Garante a rolagem horizontal */
+        padding: 0 10px;  /* Ajusta o padding para tablets */
+    }
+
     .carrossel-container img {
         width: 350px;
         height: 200px;
+        object-fit: cover;
+        flex-shrink: 0; /* Impede o encolhimento das imagens */
+        scroll-snap-align: center;
     }
 }
 
