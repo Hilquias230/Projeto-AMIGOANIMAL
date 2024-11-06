@@ -42,46 +42,77 @@ a {
 }
 
 nav {
-    position: absolute;
-    top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    margin-right: 10px;
-    width: 30px;
-    height: 210px;
-    cursor: pointer;
-    background-color: #f4f4f4;
-    padding: 10px;
-    top: 60px;
-    right: 15px;
-    width: 170px;
+    position: relative;
+    top: -70px;
+    left: 40%;
+    display: inline;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+nav a {
+    color: #ffffff;
+    background-color: #000000;
     border-radius: 5px;
-    z-index: 100;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 10px 0;
-}
-
-nav ul li a {
-    color: #000000;
+    width: 100px;
+    padding: 10px 15px;
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
+    font-size: 20px;
+    transition: background-color 0.3s;
     font-family: Courier New;
+
 }
 
-nav ul li a:hover {
-    color: #adadad;
+nav a:hover {
+    color: #555555;
 }
 
+.bt {
+    position: relative;
+    left: 90%;
+    top: -120px;
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-family: Courier New;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 7%;
+}
+.bt a:hover {
+    color: #555555;
+}
+.opcoes-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.opcoes-container a {
+    display: inline;
+    top: 50px;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    padding: 10px 15px;
+    width: 93px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px; 
+}
+.opcoes-container a:hover {
+    color: #45a049;
+}
+#opcoes {
+    background-image: url('../img/cachorrotela.jpg');
+}
 
 .carrossel {
     position: relative;
