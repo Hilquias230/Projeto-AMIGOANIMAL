@@ -42,6 +42,28 @@ a {
     margin: 0;
 }
 
+/* Estilo básico para o menu hamburguer */
+.menu-toggle {
+    display: none; /* Inicialmente, o menu hamburguer fica oculto */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    margin-left: auto; 
+    position: absolute; /* Faz o hambúrguer ser posicionado acima */
+    top: 50px; /* Move o ícone para o topo do contêiner */
+    right: 25px;
+}
+
+.menu-toggle .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 3px;
+    
+}
+
 nav {
     position: relative;
     top: -70px;
@@ -72,7 +94,7 @@ nav a:hover {
 .bt {
     position: relative;
     left: 90%;
-    top: -120px;
+    top: -105px;
     padding: 10px 10px;
     font-size: 20px;
     background-color: #000000;
@@ -270,7 +292,7 @@ form h2 {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #fff;
+    color: #ffffff;
 }
 .form-group input[type="text"],
 .form-group input[type="file"],
@@ -282,7 +304,7 @@ form h2 {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    color: #ffffff;
+    color: #888;
 }
 
 textarea {
@@ -381,9 +403,73 @@ textarea {
 
 /* Ajuste para dispositivos móveis */
 @media only screen and (max-width: 768px) {
+    
     .header, .main, .conteudo, .footer {
         width: 100vw;
         height: auto;
+    }
+    
+    .header {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        position: relative;
+    }
+
+    .nav-links {
+        display: none; /* O menu estará oculto por padrão */
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+        background-color: #333; /* Cor de fundo do menu */
+        position: absolute; /* Para posicionar o menu abaixo do cabeçalho */
+        top: 100%; /* O menu começa abaixo do cabeçalho */
+        left: 0;
+        z-index: 10; 
+    }
+
+    .nav-links a {
+        padding: 10px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        width: 100%; /* Faz os links ocuparem toda a largura do menu */
+        box-sizing: border-box;
+        text-align: left;
+
+    }
+
+    .nav-links a:hover {
+        background-color: #444; /* Cor de fundo quando passar o mouse */
+    }
+
+    /* Exibir o ícone do hambúrguer */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column; /* Alinha as barras do hambúrguer em coluna */
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer; /* Indica que é clicável */
+        position: absolute;
+        top: 20px; /* Posiciona o ícone no topo */
+        right: 20px; 
+    
+    }
+
+    .menu-toggle .bar {
+        width: 100%;
+        height: 3px;
+        background-color: #000000; /* Cor das barras */
+        border-radius: 3px;
+    }
+
+    /* Quando o menu for ativado */
+    .nav-links.active {
+        display: flex;       
     }
 
     .main {

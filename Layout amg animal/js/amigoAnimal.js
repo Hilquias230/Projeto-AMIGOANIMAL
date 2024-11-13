@@ -9,3 +9,13 @@ function moveSlide(direction) {
     const carrosselContainer = document.querySelector('.carrossel-container');
     carrosselContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
+
+
+// Seleciona o ícone do menu e o contêiner de navegação
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+// Adiciona um evento de clique para alternar a visibilidade do menu
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
