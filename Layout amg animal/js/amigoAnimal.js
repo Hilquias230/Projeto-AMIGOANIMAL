@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    
+    if (menuToggle) { //Verifica se o elemento existe na página atual
+        menuToggle.addEventListener('click', () => {
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks) {
+                navLinks.classList.toggle('active');
+            }
+        });
+    }
+});
+
+
 let currentSlide = 0;
 
 const moveSlide = (direction) => {
@@ -15,12 +29,3 @@ document.querySelector('.Ant').addEventListener('click', () => moveSlide(-1));
 document.querySelector('.Prox').addEventListener('click', () => moveSlide(1));
 
 
-
-// Seleciona o ícone do menu e o contêiner de navegação
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-// Adiciona um evento de clique para alternar a visibilidade do menu
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
