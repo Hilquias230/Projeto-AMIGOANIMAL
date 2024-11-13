@@ -1,6 +1,6 @@
 let currentSlide = 0;
 
-function moveSlide(direction) {
+const moveSlide = (direction) => {
     const slides = document.querySelectorAll('.carrossel-container img');
     const totalSlides = slides.length;
 
@@ -8,7 +8,12 @@ function moveSlide(direction) {
 
     const carrosselContainer = document.querySelector('.carrossel-container');
     carrosselContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
-}
+};
+
+// Adiciona os eventos de clique para os botões
+document.querySelector('.Ant').addEventListener('click', () => moveSlide(-1));
+document.querySelector('.Prox').addEventListener('click', () => moveSlide(1));
+
 
 
 // Seleciona o ícone do menu e o contêiner de navegação
