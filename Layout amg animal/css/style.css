@@ -67,18 +67,19 @@ a {
 nav {
     position: relative;
     top: -70px;
-    left: 40%;
-    display: inline;
+    left: 3%;
+    display: inline-flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
-
 
 nav a {
     color: #ffffff;
     background-color: #000000;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
     border-radius: 5px;
-    width: 100px;
+    width: 135px;
+    height: 60px;
     padding: 10px 15px;
     text-decoration: none;
     font-size: 20px;
@@ -88,27 +89,10 @@ nav a {
 }
 
 nav a:hover {
-    color: #555555;
+    color: #DEB887;
+    transition: color 0.3s;
 }
 
-.bt {
-    position: relative;
-    left: 90%;
-    top: -105px;
-    padding: 10px 10px;
-    font-size: 20px;
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    font-family: Courier New;
-    text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 7%;
-}
-.bt a:hover {
-    color: #555555;
-}
 .opcoes-container {
     text-align: center;
     background-color: #ffffff;
@@ -135,6 +119,10 @@ nav a:hover {
 }
 #opcoes {
     background-image: url('../img/cachorrotela.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
 .carrossel {
@@ -215,17 +203,26 @@ button.Anr:hover, button.Prox:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .subt2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 .subt3 {
     font-size: 25px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .paragrafo {
     font-size: 17px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
+.brasil {
+    font-weight: bold;
+    padding: 10px;
+}
+ul {
+    padding: 10px;
+}
+
+
 .conteudo img {
     max-width: 500px; /* Preenche toda a largura do .prop */ 
     height: 100%; /* Ajusta a altura para o contêiner .prop */
@@ -420,7 +417,9 @@ textarea {
 
     .nav-links {
         display: none; /* O menu estará oculto por padrão */
-        width: 100%;
+        width: 90%;
+        padding: 20px;
+        border-radius: 5px;
         flex-direction: column;
         align-items: flex-start;
         padding: 10px 0;
