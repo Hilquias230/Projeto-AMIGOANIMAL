@@ -191,6 +191,7 @@ button.Anr:hover, button.Prox:hover {
     align-items: center;
     margin: 20px auto;
     padding: 20px;
+    font-family: 'Courier New';
 }
 
 .conteudo .sec {
@@ -342,12 +343,14 @@ textarea {
 .back {
     display: block;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 70px;
     color: #4CAF50;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
     white-space: nowrap;
+    position: relative;
+    left: 42%;
 
 }
 
@@ -504,6 +507,13 @@ textarea {
         height: auto;
         display: block;
         margin: 0 auto;
+    }
+    
+    .opcoes-container a {
+        width: 80px; /* Reduz a largura */
+        font-size: 14px; /* Diminui o tamanho do texto */
+        padding: 8px 12px;
+        margin: 8px 0;
     }
 
     .footer {
