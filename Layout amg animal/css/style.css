@@ -390,14 +390,29 @@ textarea {
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
     .header, .main, .conteudo, .footer {
         width: 100vw;
+        height: auto;
     }
+    
     .main {
         grid-template-columns: 1fr;
         height: auto;
     }
+    nav {
+        position: relative;
+        top: 15px;
+        left: 3%;
+        display: inline-flex;
+        justify-content: center;
+        gap: 20px;
+    }
     .carrossel-container img {
         width: 350px;
-        height: 200px;
+        height: auto;
+    }
+    .footer {
+        height: auto;
+        padding: 10px;
+        text-align: center;
     }
 }
 
@@ -420,32 +435,32 @@ textarea {
 
     .nav-links {
         display: none; /* O menu estará oculto por padrão */
-        width: 90%;
-        padding: 20px;
+        width: 50%;
         border-radius: 5px;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 0;
+        align-items:center;
+        padding: 20px 0;
         background-color: #333; /* Cor de fundo do menu */
         position: absolute; /* Para posicionar o menu abaixo do cabeçalho */
         top: 100%; /* O menu começa abaixo do cabeçalho */
-        left: 0;
-        z-index: 10; 
+        left: 50%;
+        z-index: 10;
+        
     }
 
     .nav-links a {
         padding: 10px;
         text-decoration: none;
         color: #ffffff;
-        font-size: 18px;
-        width: 100%; /* Faz os links ocuparem toda a largura do menu */
+        font-size: 20px;
+        width: 50%; /* Faz os links ocuparem toda a largura do menu */
         box-sizing: border-box;
-        text-align: left;
+        text-align: center;
 
     }
 
     .nav-links a:hover {
-        background-color: #444; /* Cor de fundo quando passar o mouse */
+        background-color: #2b2b2b; /* Cor de fundo quando passar o mouse */
     }
 
     /* Exibir o ícone do hambúrguer */
@@ -457,7 +472,7 @@ textarea {
         height: 21px;
         cursor: pointer; /* Indica que é clicável */
         position: absolute;
-        top: 20px; /* Posiciona o ícone no topo */
+        top: 145px; /* Posiciona o ícone no topo */
         right: 20px; 
     
     }
