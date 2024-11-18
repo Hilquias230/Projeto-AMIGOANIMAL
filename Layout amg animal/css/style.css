@@ -380,9 +380,11 @@ textarea {
 @media only screen and (min-width: 1024px) {
     .header, .main, .conteudo, .footer {
         width: 100vw;
+        height: auto;
     }
     .main {
         grid-template-columns: 1fr 1fr;
+        height: auto;
     }
 }
 
@@ -473,9 +475,9 @@ textarea {
         cursor: pointer; /* Indica que é clicável */
         position: absolute;
         top: 145px; /* Posiciona o ícone no topo */
-        right: 20px; 
-    
+        right: 20px;
     }
+
 
     .menu-toggle .bar {
         width: 100%;
@@ -486,7 +488,7 @@ textarea {
 
     /* Quando o menu for ativado */
     .nav-links.active {
-        display: flex;       
+        display: flex;      
     }
 
     .main {
