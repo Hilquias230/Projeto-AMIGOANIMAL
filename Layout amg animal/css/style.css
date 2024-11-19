@@ -234,23 +234,26 @@ ul {
 }
 
 .footer {
-   display: grid;
-   width: 100vw;
-   height: 20vh;
-   background-color: black;
-   color: white;
+    height: 150px !important;
+    display: flex; /* Torna o contêiner flexível */
+    justify-content: flex-start; /* Espaça os itens: texto de um lado, ícones do outro */
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    background-color: #000000; /* Cor de fundo opcional */
 }
 
- .footer h3 {
-   margin-bottom: 10px;
-   font-family: Courier New;
+.footer h3 {
+    margin: 0; /* Remove a margem padrão do <h3> */
+    font-size: 16px; /* Ajusta o tamanho do texto, se necessário */
+    color: #FFFFFF;
 }
 
 .footer img {
-   width: 50px; 
-   height: auto;
-   margin: 0 auto;
+    width: 30px; /* Tamanho dos ícones */
+    height: auto; /* Mantém a proporção */
+    margin-left: 65px; /* Espaçamento entre os ícones */
 }
+
 
 /*Paginas denuncia anonima, logins, cadastros*/
 
