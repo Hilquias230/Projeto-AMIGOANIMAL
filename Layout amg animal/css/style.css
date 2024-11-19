@@ -340,20 +340,51 @@ textarea {
     background-color: #45a049;
 }
 
-.back {
+.opcao {
     display: block;
     text-align: center;
     margin-top: 70px;
-    color: #4CAF50;
+    color: #32CD32;
     text-decoration: none;
-    font-weight: bold;
     transition: color 0.3s ease;
     white-space: nowrap;
     position: relative;
-    left: 42%;
+    left: 45%;
 
 }
 
+.user {
+    display: block;
+    margin-top: 50px;
+    color: #32CD32;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    margin-left: 20px;
+
+}
+
+.anoni {
+    display: block;
+    margin-top: 50px;
+    color: #32CD32;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    margin-right: 110px;
+
+}
+
+.ongs{
+    display: block;
+    margin-top: 50px;
+    color: #32CD32;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    margin-left: 50px;
+
+}
 .link {
     text-align: center;
     margin-top: 10px;
@@ -396,7 +427,7 @@ textarea {
     }
     
     .main {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         height: auto;
     }
     nav {
