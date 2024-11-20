@@ -85,12 +85,20 @@ nav a {
     font-size: 20px;
     transition: background-color 0.3s;
     font-family: Courier New;
-
+    
 }
 
 nav a:hover {
     color: #DEB887;
     transition: color 0.3s;
+}
+
+#opcoes {
+    background-image: url('../img/cachorrotela.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
 .opcoes-container {
@@ -116,13 +124,6 @@ nav a:hover {
 }
 .opcoes-container a:hover {
     color: #45a049;
-}
-#opcoes {
-    background-image: url('../img/cachorrotela.jpg');
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
 }
 
 .carrossel {
@@ -239,6 +240,7 @@ ul {
     justify-content: flex-start; /* Espaça os itens: texto de um lado, ícones do outro */
     align-items: center; /* Centraliza verticalmente os itens */
     padding: 10px 20px; /* Adiciona espaçamento interno */
+    font-family: Courier New;
     background-color: #000000; /* Cor de fundo opcional */
 }
 
@@ -249,24 +251,26 @@ ul {
     left: 45%;
     font-size: 16px; /* Ajusta o tamanho do texto, se necessário */
     color: #FFFFFF;
+    font-weight: bolder;
 }
-.footer p {
-    margin: 0;
-    margin-right: 10px;
-    position: relative;
-    top: -50px;
-    right: 150px;
-    font-size: 20px; 
-    color: #FFFFFF
+.comp {
+    display: flex; /* Torna o contêiner flexível */
+    justify-content: center; /* Espaça os itens: texto de um lado, ícones do outro */
+    align-items: center; 
 }
 
-.footer img {
-    width: 40px; /* Tamanho dos ícones */
+.comp img{
+    width: 40px;
     position: relative;
-    top: -10px;
-    right: 22%;
-    height: auto; /* Mantém a proporção */
-    margin-left: 15px; /* Espaçamento entre os ícones */
+    right: 53%;
+    margin-left: 15px;
+}
+.comp p {
+    font-size: 20px;
+    position: relative;
+    top: -40px;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 
@@ -364,6 +368,7 @@ textarea {
     margin-top: 70px;
     color: #32CD32;
     text-decoration: none;
+    font-weight: bolder ;
     transition: color 0.3s ease;
     white-space: nowrap;
     position: relative;
@@ -376,6 +381,7 @@ textarea {
     margin-top: 50px;
     color: #32CD32;
     text-decoration: none;
+    font-weight: bolder;
     transition: color 0.3s ease;
     white-space: nowrap;
     margin-left: 20px;
@@ -387,6 +393,7 @@ textarea {
     margin-top: 50px;
     color: #32CD32;
     text-decoration: none;
+    font-weight: bolder;
     transition: color 0.3s ease;
     white-space: nowrap;
     margin-right: 110px;
@@ -398,6 +405,7 @@ textarea {
     margin-top: 50px;
     color: #32CD32;
     text-decoration: none;
+    font-weight: bolder;
     transition: color 0.3s ease;
     white-space: nowrap;
     margin-left: 50px;
@@ -584,7 +592,12 @@ textarea {
 
     .footer {
         height: auto;
-        padding: 10px;
+        display: flex;
+        padding: 20px;
         text-align: center;
+    }
+    .footer h3 {
+        position:relative;
+        left: 32%;
     }
 }
