@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Courier New;
 }
 
 /* Definição básica do body */
@@ -93,6 +94,22 @@ nav a:hover {
     transition: color 0.3s;
 }
 
+.bt {
+    color: #ffffff;
+    background-color: #c95a00;
+    position: relative;
+    left: 25%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    width: 135px;
+    height: 60px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    font-family: Courier New;
+}
+
 #opcoes {
     background-image: url('../img/cachorrotela.jpg');
     background-size: cover; 
@@ -102,13 +119,22 @@ nav a:hover {
 }
 
 .opcoes-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
+    width: 50%;
+    height: 35%;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.opcoes-container a {
+.tlt {
+    color: #ffffff;
+}
+.opcoes-container .opc {
     display: inline;
     top: 50px;
     position: relative;
@@ -118,12 +144,13 @@ nav a:hover {
     width: 93px;
     background-color: #4CAF50;
     color: #ffffff;
+    transition: color 0.3s;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px; 
 }
-.opcoes-container a:hover {
-    color: #45a049;
+.opcoes-container .opc:hover {
+    color: #113f13;
 }
 
 .carrossel {
@@ -262,13 +289,14 @@ ul {
 .comp img{
     width: 40px;
     position: relative;
-    right: 53%;
+    right: 99%;
     margin-left: 15px;
 }
 .comp p {
     font-size: 20px;
     position: relative;
     top: -40px;
+    right: 45%;
     color: #ffffff;
     font-weight: bold;
 }
@@ -363,26 +391,28 @@ textarea {
 }
 
 .opcao {
+    position: absolute;
+    transform: translate(-50%, -50%);
     display: block;
     text-align: center;
     margin-top: 70px;
-    color: #32CD32;
+    color: #4CAF50;
+    border-radius: 10px;
+    padding: 5px;
     text-decoration: none;
     font-weight: bolder ;
-    transition: color 0.3s ease;
     white-space: nowrap;
-    position: relative;
-    left: 45%;
+    left: 35%;
+    top: 60%;
 
 }
 
 .user {
     display: block;
     margin-top: 50px;
-    color: #32CD32;
+    color: #4CAF50;
     text-decoration: none;
     font-weight: bolder;
-    transition: color 0.3s ease;
     white-space: nowrap;
     margin-left: 20px;
 
@@ -391,22 +421,21 @@ textarea {
 .anoni {
     display: block;
     margin-top: 50px;
-    color: #32CD32;
+    color: #4CAF50;
     text-decoration: none;
     font-weight: bolder;
     transition: color 0.3s ease;
     white-space: nowrap;
-    margin-right: 110px;
+    margin-right: 175px;
 
 }
 
 .ongs{
     display: block;
     margin-top: 50px;
-    color: #32CD32;
+    color: #4CAF50;
     text-decoration: none;
     font-weight: bolder;
-    transition: color 0.3s ease;
     white-space: nowrap;
     margin-left: 50px;
 
@@ -439,6 +468,16 @@ textarea {
         width: 100vw;
         height: auto;
     }
+    nav {
+        position: relative;
+        left: 7%;
+        display: inline-flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .bt {
+        left: 100px;
+    }
     .main {
         grid-template-columns: 1fr 1fr;
         height: auto;
@@ -463,6 +502,9 @@ textarea {
         display: inline-flex;
         justify-content: center;
         gap: 20px;
+    }
+    .bt {
+        left: 100px ;
     }
     .carrossel-container img {
         width: 350px;
@@ -516,6 +558,9 @@ textarea {
         box-sizing: border-box;
         text-align: center;
 
+    }
+    .bt {
+        left: 0;
     }
 
     .nav-links a:hover {
