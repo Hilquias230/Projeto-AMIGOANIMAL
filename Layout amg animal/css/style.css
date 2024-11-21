@@ -69,7 +69,7 @@ nav {
     position: relative;
     top: -70px;
     left: 3%;
-    display: inline-flex;
+    display:inline;
     justify-content: center;
     gap: 20px;
 }
@@ -79,13 +79,14 @@ nav a {
     background-color: #000000;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
     border-radius: 5px;
-    width: 135px;
-    height: 60px;
-    padding: 10px 15px;
+    width: 125px;
+    height: 40px;
+    padding: 10px;
     text-decoration: none;
     font-size: 20px;
     transition: background-color 0.3s;
     font-family: Courier New;
+    white-space: nowrap;
     
 }
 
@@ -101,8 +102,8 @@ nav a:hover {
     left: 25%;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
     border-radius: 5px;
-    width: 135px;
-    height: 60px;
+    width: 100px;
+    height: 40px;
     padding: 10px 15px;
     text-decoration: none;
     font-size: 20px;
@@ -143,14 +144,14 @@ nav a:hover {
     padding: 10px 15px;
     width: 93px;
     background-color: #4CAF50;
-    color: #ffffff;
+    color: #000000 ;
     transition: color 0.3s;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px; 
 }
 .opcoes-container .opc:hover {
-    color: #113f13;
+    color: #092c0a;
 }
 
 .carrossel {
@@ -396,13 +397,15 @@ textarea {
     display: block;
     text-align: center;
     margin-top: 70px;
-    color: #4CAF50;
-    border-radius: 10px;
+    color: #000000;
+    background-color: #4CAF50;
+    width: 200px;
+    border-radius: 5px;
     padding: 5px;
     text-decoration: none;
     font-weight: bolder ;
     white-space: nowrap;
-    left: 35%;
+    left: 50%;
     top: 60%;
 
 }
@@ -410,7 +413,11 @@ textarea {
 .user {
     display: block;
     margin-top: 50px;
-    color: #4CAF50;
+    color: #000000;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    width: 190px;
+    padding: 10px;
     text-decoration: none;
     font-weight: bolder;
     white-space: nowrap;
@@ -421,7 +428,7 @@ textarea {
 .anoni {
     display: block;
     margin-top: 50px;
-    color: #4CAF50;
+    color: #000000;
     text-decoration: none;
     font-weight: bolder;
     transition: color 0.3s ease;
