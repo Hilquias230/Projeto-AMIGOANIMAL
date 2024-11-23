@@ -82,8 +82,10 @@ nav a {
     width: 125px;
     height: 40px;
     padding: 10px;
+    text-align: center;
     text-decoration: none;
     font-size: 20px;
+    font-weight: bold;
     transition: background-color 0.3s;
     font-family: Courier New;
     white-space: nowrap;
@@ -107,6 +109,7 @@ nav a:hover {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 20px;
+    font-weight: bolder;
     transition: background-color 0.3s;
     font-family: Courier New;
 }
@@ -147,6 +150,7 @@ nav a:hover {
     color: #000000 ;
     transition: color 0.3s;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
     font-size: 16px; 
 }
@@ -332,6 +336,7 @@ form h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #fff;
+    font-weight: bolder;
 }
 
 .form-group {
@@ -342,6 +347,7 @@ form h2 {
     display: block;
     margin-bottom: 5px;
     color: #ffffff;
+    font-weight: bold;
 }
 .form-group input[type="text"],
 .form-group input[type="file"],
@@ -353,6 +359,7 @@ form h2 {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    font-weight: bolder;
     color: #888;
 }
 
@@ -366,6 +373,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    font-weight: bolder;
     color: #888;
 
 }
@@ -373,16 +381,18 @@ textarea {
 .anonimo input[type="text"] {
     background-color: #f0f0f0;
     color: #888;
+    font-weight: bolder;
 }
 
 .botao {
     width: 100%;
     padding: 10px;
     background-color: #4CAF50;
-    color: #fff;
+    color: #000000;
     border: none;
     border-radius: 5px;
     font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -416,12 +426,12 @@ textarea {
     color: #000000;
     border-radius: 5px;
     background-color: #4CAF50;
-    width: 190px;
-    padding: 10px;
+    width: 170px;
+    padding: 5px;
     text-decoration: none;
     font-weight: bolder;
     white-space: nowrap;
-    margin-left: 20px;
+    margin-left: 70px;
 
 }
 
@@ -429,33 +439,42 @@ textarea {
     display: block;
     margin-top: 50px;
     color: #000000;
+    background-color: #4CAF50;
+    width: 170px;
+    border-radius: 5px;
+    padding: 5px;
     text-decoration: none;
     font-weight: bolder;
-    transition: color 0.3s ease;
     white-space: nowrap;
-    margin-right: 175px;
+    margin-right: 0px;
 
 }
 
 .ongs{
     display: block;
     margin-top: 50px;
-    color: #4CAF50;
+    color: #000000;
+    background-color: #4CAF50;
+    width: 170px;
+    padding: 5px;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bolder;
     white-space: nowrap;
-    margin-left: 50px;
+    margin-left: 105px;
 
 }
 .link {
     text-align: center;
     margin-top: 10px;
     color: #dfdfdf;
+    font-weight: bold;
   }
   
   .link a {
     color: #4CAF50;
     text-decoration: none;
+    font-weight: bolder;
   }
   
   .link a:hover {
@@ -489,6 +508,17 @@ textarea {
         grid-template-columns: 1fr 1fr;
         height: auto;
     }
+    .opcoes-container {
+        padding: 20px;
+        width: 60%;
+        height: 35%;
+
+    }
+    .opcao {
+        left: 50%;
+        top: 50%;
+    
+    }
 }
 
 /* Para tablets ou notebooks (entre 768px e 1024px de largura) */
@@ -521,6 +551,16 @@ textarea {
         height: auto;
         padding: 10px;
         text-align: center;
+    }
+    .opcoes-container {
+        padding: 20px;
+        width: 75%;
+        height: 40%;
+
+    }
+    .opcao {
+        left: 50%;
+        top: 50%;
     }
 }
 
@@ -560,7 +600,7 @@ textarea {
         padding: 10px;
         text-decoration: none;
         color: #ffffff;
-        font-size: 20px;
+        font-size: 18px;
         width: 50%; /* Faz os links ocuparem toda a largura do menu */
         box-sizing: border-box;
         text-align: center;
@@ -635,13 +675,6 @@ textarea {
         margin: 0 auto;
     }
     
-    .opcoes-container a {
-        width: 80px; /* Reduz a largura */
-        font-size: 14px; /* Diminui o tamanho do texto */
-        padding: 8px 12px;
-        margin: 8px 0;
-    }
-
     .footer {
         height: auto;
         display: flex;
@@ -652,4 +685,27 @@ textarea {
         position:relative;
         left: 32%;
     }
+
+    .opcoes-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        width: 60%;
+        height: 62%;
+
+    }
+
+    .opcoes-container .opc {
+        width: 190px;
+        padding: 10px;
+    }
+
+    .opcao {
+        padding: 5px;
+        left: 50%;
+        top: 70%;
+    
+    }
+
 }
