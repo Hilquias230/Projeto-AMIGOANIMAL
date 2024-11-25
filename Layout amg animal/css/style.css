@@ -11,49 +11,57 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #F8F8FF; /* Cor de fundo */
-    overflow-x: hidden; 
+    background-color: #F8F8FF;
+    /* Cor de fundo */
+    overflow-x: hidden;
 }
 
 a {
     /* background-color: #000000; */
-    width: 80px; 
-    height: auto; 
+    width: 80px;
+    height: auto;
     margin-bottom: 10px;
 }
 
-
 .header {
-  display: grid;
-  background-color: #DEB887;
-  color: #ffffff;
-  padding: 15px;
-  width: 100vw;
-  height: 30vh;
-  position: relative;
-}
-.logo {
-    width: 100px;
+    display: grid;
+    background-color: #DEB887;
+    color: #ffffff;
+    padding: 15px;
+    width: 100vw;
+    height: 20vh;
+    position: relative;
 }
 
-.header h1 {
+.logo {
+    width: 120px;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(150%);
+    
+}
+
+/* .header h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 44px;
     color: #000000;
     margin: 0;
-}
+} */
 
 /* Estilo básico para o menu hamburguer */
 .menu-toggle {
-    display: none; /* Inicialmente, o menu hamburguer fica oculto */
+    display: none;
+    /* Inicialmente, o menu hamburguer fica oculto */
     cursor: pointer;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
     height: 21px;
-    margin-left: auto; 
-    position: absolute; /* Faz o hambúrguer ser posicionado acima */
-    top: 50px; /* Move o ícone para o topo do contêiner */
+    margin-left: auto;
+    position: absolute;
+    /* Faz o hambúrguer ser posicionado acima */
+    margin-top: -90px;
+    /* Move o ícone para o topo do contêiner */
     right: 25px;
 }
 
@@ -62,14 +70,14 @@ a {
     height: 3px;
     background-color: #000;
     border-radius: 3px;
-    
+
 }
 
 nav {
     position: relative;
     top: -70px;
     left: 3%;
-    display:inline;
+    display: inline;
     justify-content: center;
     gap: 20px;
 }
@@ -89,7 +97,7 @@ nav a {
     transition: background-color 0.3s;
     font-family: Courier New;
     white-space: nowrap;
-    
+
 }
 
 nav a:hover {
@@ -116,10 +124,10 @@ nav a:hover {
 
 #opcoes {
     background-image: url('../img/cachorrotela.jpg');
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
 
 .opcoes-container {
@@ -135,9 +143,11 @@ nav a:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .tlt {
     color: #ffffff;
 }
+
 .opcoes-container .opc {
     display: inline;
     top: 50px;
@@ -147,13 +157,14 @@ nav a:hover {
     padding: 10px 15px;
     width: 93px;
     background-color: #4CAF50;
-    color: #000000 ;
+    color: #000000;
     transition: color 0.3s;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    font-size: 16px; 
+    font-size: 16px;
 }
+
 .opcoes-container .opc:hover {
     color: #092c0a;
 }
@@ -166,7 +177,7 @@ nav a:hover {
     margin: 0 auto;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -180,10 +191,11 @@ nav a:hover {
     max-width: 100%;
     flex: 1 0 100%;
     object-fit: cover;
-    
+
 }
 
-button.Ant, button.Prox {
+button.Ant,
+button.Prox {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -206,7 +218,8 @@ button.Prox {
 }
 
 /* Efeito de hover nos botões */
-button.Anr:hover, button.Prox:hover {
+button.Anr:hover,
+button.Prox:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -215,6 +228,7 @@ button.Anr:hover, button.Prox:hover {
     transition: transform 0.5s ease-in-out;
 
 }
+
 .conteudo {
     display: flex;
     flex-direction: column;
@@ -231,36 +245,44 @@ button.Anr:hover, button.Prox:hover {
     width: 100%;
     max-width: 800px;
     padding: 20px;
-    background-color: #ffffff ; 
+    background-color: #ffffff;
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .subt2 {
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 .subt3 {
     font-size: 25px;
     margin-top: 20px;
 }
+
 .paragrafo {
     font-size: 17px;
     margin-top: 5px;
 }
+
 .brasil {
     font-weight: bold;
     padding: 10px;
 }
+
 ul {
     padding: 10px;
 }
 
 
 .conteudo img {
-    max-width: 500px; /* Preenche toda a largura do .prop */ 
-    height: 100%; /* Ajusta a altura para o contêiner .prop */
-    object-fit: cover; /* Preenche o contêiner, mas pode cortar um pouco da imagem */
+    max-width: 500px;
+    /* Preenche toda a largura do .prop */
+    height: 100%;
+    /* Ajusta a altura para o contêiner .prop */
+    object-fit: cover;
+    /* Preenche o contêiner, mas pode cortar um pouco da imagem */
     display: block;
     margin: 20px;
 
@@ -268,35 +290,46 @@ ul {
 
 .footer {
     height: 150px !important;
-    display: flex; /* Torna o contêiner flexível */
-    justify-content: flex-start; /* Espaça os itens: texto de um lado, ícones do outro */
-    align-items: center; /* Centraliza verticalmente os itens */
-    padding: 10px 20px; /* Adiciona espaçamento interno */
+    display: flex;
+    /* Torna o contêiner flexível */
+    justify-content: flex-start;
+    /* Espaça os itens: texto de um lado, ícones do outro */
+    align-items: center;
+    /* Centraliza verticalmente os itens */
+    padding: 10px 20px;
+    /* Adiciona espaçamento interno */
     font-family: Courier New;
-    background-color: #000000; /* Cor de fundo opcional */
+    background-color: #000000;
+    /* Cor de fundo opcional */
 }
 
 .footer h3 {
-    margin: 0; /* Remove a margem padrão do <h3> */
+    margin: 0;
+    /* Remove a margem padrão do <h3> */
     position: relative;
     top: 50px;
     left: 45%;
-    font-size: 16px; /* Ajusta o tamanho do texto, se necessário */
+    font-size: 16px;
+    /* Ajusta o tamanho do texto, se necessário */
     color: #FFFFFF;
     font-weight: bolder;
 }
+
 .comp {
-    display: flex; /* Torna o contêiner flexível */
-    justify-content: center; /* Espaça os itens: texto de um lado, ícones do outro */
-    align-items: center; 
+    display: flex;
+    /* Torna o contêiner flexível */
+    justify-content: center;
+    /* Espaça os itens: texto de um lado, ícones do outro */
+    align-items: center;
 }
 
-.comp img{
+.comp img {
     width: 40px;
     position: relative;
     right: 99%;
     margin-left: 15px;
 }
+
 .comp p {
     font-size: 20px;
     position: relative;
@@ -310,20 +343,29 @@ ul {
 /*Paginas denuncia anonima, logins, cadastros*/
 
 #paginas_fundo {
-    background-image: url('../img/cachorrotela.jpg'); /* Altere o caminho para o local da sua imagem */
-    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-    background-attachment: fixed; /* Mantém a imagem fixa no fundo ao rolar a página */
+    background-image: url('../img/cachorrotela.jpg');
+    /* Altere o caminho para o local da sua imagem */
+    background-size: cover;
+    /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Evita repetição da imagem */
+    background-attachment: fixed;
+    /* Mantém a imagem fixa no fundo ao rolar a página */
     /*color: #fff;  Muda a cor do texto, se necessário, para contrastar com a imagem de fundo */
 }
 
 .form-container {
     display: flex;
-    flex-direction: column; /* Alinha os itens em uma coluna */
-    align-items: center; /* Centraliza horizontalmente os itens */
-    justify-content: center; /* Centraliza verticalmente os itens */
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo do formulário */
+    flex-direction: column;
+    /* Alinha os itens em uma coluna */
+    align-items: center;
+    /* Centraliza horizontalmente os itens */
+    justify-content: center;
+    /* Centraliza verticalmente os itens */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fundo do formulário */
     padding: 20px;
     border-radius: 10px;
     max-width: 400px;
@@ -349,11 +391,13 @@ form h2 {
     color: #ffffff;
     font-weight: bold;
 }
+
 .form-group input[type="text"],
 .form-group input[type="file"],
 .form-group input[type="email"],
 .form-group input[type="password"],
-.form-group textarea {
+.form-group textarea,
+select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -367,6 +411,7 @@ textarea {
     resize: vertical;
     min-height: 80px;
 }
+
 .form-group input[type="date"] {
     width: 100%;
     padding: 10px;
@@ -413,7 +458,7 @@ textarea {
     border-radius: 5px;
     padding: 5px;
     text-decoration: none;
-    font-weight: bolder ;
+    font-weight: bolder;
     white-space: nowrap;
     left: 50%;
     top: 60%;
@@ -450,7 +495,7 @@ textarea {
 
 }
 
-.ongs{
+.ongs {
     display: block;
     margin-top: 50px;
     color: #000000;
@@ -464,22 +509,23 @@ textarea {
     margin-left: 105px;
 
 }
+
 .link {
     text-align: center;
     margin-top: 10px;
     color: #dfdfdf;
     font-weight: bold;
-  }
-  
-  .link a {
+}
+
+.link a {
     color: #4CAF50;
     text-decoration: none;
     font-weight: bolder;
-  }
-  
-  .link a:hover {
+}
+
+.link a:hover {
     text-decoration: underline;
-  }
+}
 
 
 /*_________________________________*/
@@ -490,10 +536,15 @@ textarea {
 
 /* Para telas maiores como desktops (PCs) */
 @media only screen and (min-width: 1024px) {
-    .header, .main, .conteudo, .footer {
+
+    .header,
+    .main,
+    .conteudo,
+    .footer {
         width: 100vw;
         height: auto;
     }
+
     nav {
         position: relative;
         left: 7%;
@@ -501,37 +552,52 @@ textarea {
         justify-content: center;
         gap: 20px;
     }
+
     .bt {
         left: 100px;
     }
+
     .main {
         grid-template-columns: 1fr 1fr;
         height: auto;
     }
+
     .opcoes-container {
         padding: 20px;
         width: 60%;
         height: 35%;
 
     }
+
     .opcao {
         left: 50%;
         top: 50%;
-    
+
     }
 }
 
 /* Para tablets ou notebooks (entre 768px e 1024px de largura) */
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
-    .header, .main, .conteudo, .footer {
+
+    .header,
+    .main,
+    .conteudo,
+    .footer {
         width: 100vw;
         height: auto;
     }
-    
+
     .main {
         grid-template-columns: 1fr 1fr;
         height: auto;
     }
+
+    .logo {
+        width: 80px; /* Diminui o tamanho em telas menores */
+        margin-left: 20%; /* Reduz o deslocamento */
+        transform: translateX(0); /* Remove ajustes desnecessários */
+    }
+
     nav {
         position: relative;
         top: 15px;
@@ -540,24 +606,29 @@ textarea {
         justify-content: center;
         gap: 20px;
     }
+
     .bt {
-        left: 100px ;
+        left: 100px;
     }
+
     .carrossel-container img {
         width: 350px;
         height: auto;
     }
+
     .footer {
         height: auto;
         padding: 10px;
         text-align: center;
     }
+
     .opcoes-container {
         padding: 20px;
         width: 75%;
         height: 40%;
 
     }
+
     .opcao {
         left: 50%;
         top: 50%;
@@ -566,12 +637,15 @@ textarea {
 
 /* Ajuste para dispositivos móveis */
 @media only screen and (max-width: 768px) {
-    
-    .header, .main, .conteudo, .footer {
+
+    .header,
+    .main,
+    .conteudo,
+    .footer {
         width: 100vw;
         height: auto;
     }
-    
+
     .header {
         flex-direction: column;
         display: flex;
@@ -582,18 +656,22 @@ textarea {
     }
 
     .nav-links {
-        display: none; /* O menu estará oculto por padrão */
+        display: none;
+        /* O menu estará oculto por padrão */
         width: 50%;
         border-radius: 5px;
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         padding: 20px 0;
-        background-color: #333; /* Cor de fundo do menu */
-        position: absolute; /* Para posicionar o menu abaixo do cabeçalho */
-        top: 100%; /* O menu começa abaixo do cabeçalho */
+        background-color: #333;
+        /* Cor de fundo do menu */
+        position: absolute;
+        /* Para posicionar o menu abaixo do cabeçalho */
+        top: 100%;
+        /* O menu começa abaixo do cabeçalho */
         left: 50%;
         z-index: 10;
-        
+
     }
 
     .nav-links a {
@@ -601,29 +679,35 @@ textarea {
         text-decoration: none;
         color: #ffffff;
         font-size: 18px;
-        width: 50%; /* Faz os links ocuparem toda a largura do menu */
+        width: 50%;
+        /* Faz os links ocuparem toda a largura do menu */
         box-sizing: border-box;
         text-align: center;
 
     }
+
     .bt {
         left: 0;
     }
 
     .nav-links a:hover {
-        background-color: #2b2b2b; /* Cor de fundo quando passar o mouse */
+        background-color: #2b2b2b;
+        /* Cor de fundo quando passar o mouse */
     }
 
     /* Exibir o ícone do hambúrguer */
     .menu-toggle {
         display: flex;
-        flex-direction: column; /* Alinha as barras do hambúrguer em coluna */
+        flex-direction: column;
+        /* Alinha as barras do hambúrguer em coluna */
         justify-content: space-between;
         width: 30px;
         height: 21px;
-        cursor: pointer; /* Indica que é clicável */
+        cursor: pointer;
+        /* Indica que é clicável */
         position: absolute;
-        top: 145px; /* Posiciona o ícone no topo */
+        top: 145px;
+        /* Posiciona o ícone no topo */
         right: 20px;
     }
 
@@ -631,13 +715,14 @@ textarea {
     .menu-toggle .bar {
         width: 100%;
         height: 3px;
-        background-color: #000000; /* Cor das barras */
+        background-color: #000000;
+        /* Cor das barras */
         border-radius: 3px;
     }
 
     /* Quando o menu for ativado */
     .nav-links.active {
-        display: flex;      
+        display: flex;
     }
 
     .main {
@@ -674,15 +759,16 @@ textarea {
         display: block;
         margin: 0 auto;
     }
-    
+
     .footer {
         height: auto;
         display: flex;
         padding: 20px;
         text-align: center;
     }
+
     .footer h3 {
-        position:relative;
+        position: relative;
         left: 32%;
     }
 
@@ -705,7 +791,7 @@ textarea {
         padding: 5px;
         left: 50%;
         top: 70%;
-    
+
     }
 
 }
