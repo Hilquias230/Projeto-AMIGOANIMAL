@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
     font-family: Courier New;
 }
 
@@ -9,18 +8,25 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    overflow-x: hidden;
     background-color: #F8F8FF;
     /* Cor de fundo */
-    overflow-x: hidden;
 }
 
 a {
-    /* background-color: #000000; */
-    width: 80px;
+    /*background-color: #000000;*/
+    width: 150px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+
+.logo {
+    width: 150px;
     height: auto;
-    margin-bottom: 10px;
+    
 }
 
 .header {
@@ -33,13 +39,6 @@ a {
     position: relative;
 }
 
-.logo {
-    width: 150px;
-    position: relative;
-    left: 150px;
-    top: 40px;
-    
-}
 
 /* .header h1 {
     font-family: 'Courier New', Courier, monospace;
@@ -88,7 +87,7 @@ nav a {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
     border-radius: 5px;
     width: 125px;
-    height: 40px;
+    height: 25px;
     padding: 10px;
     text-align: center;
     text-decoration: none;
@@ -113,7 +112,7 @@ nav a:hover {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
     border-radius: 5px;
     width: 100px;
-    height: 40px;
+    height: 25px;
     padding: 10px 15px;
     text-decoration: none;
     font-size: 20px;
@@ -172,9 +171,8 @@ nav a:hover {
 .carrossel {
     position: relative;
     top: 20px;
-    width: 100vw;
-    max-width: 800px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -184,12 +182,11 @@ nav a:hover {
 .carrossel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    max-width: 400%;
+    max-width: 100%;
 }
 
 .carrossel-container img {
     max-width: 100%;
-    flex: 1 0 100%;
     object-fit: cover;
 
 }
@@ -234,16 +231,16 @@ button.Prox:hover {
     flex-direction: column;
     background-color: #f4f4f4;
     border-radius: 8px;
-    width: 80vw;
+    width: 90vw;
     align-items: center;
-    margin: 20px auto;
-    padding: 20px;
+    padding: 10px;
+    margin-top: 20px;
     font-family: 'Courier New';
 }
 
 .conteudo .sec {
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     padding: 20px;
     background-color: #ffffff;
     margin-top: 20px;
@@ -326,7 +323,7 @@ ul {
 .comp img {
     width: 40px;
     position: relative;
-    right: 99%;
+    right: 85%;
     margin-left: 15px;
 }
 
@@ -334,7 +331,7 @@ ul {
     font-size: 20px;
     position: relative;
     top: -40px;
-    right: 45%;
+    right: 32%;
     color: #ffffff;
     font-weight: bold;
 }
@@ -594,12 +591,12 @@ textarea {
 
     .logo {
         width: 120px;
-        left: 100px;
+        left: 30px;
     }
 
     nav {
         position: relative;
-        top: 15px;
+        top: -10px;
         left: 3%;
         display: inline-flex;
         justify-content: center;
@@ -610,9 +607,18 @@ textarea {
         left: 100px;
     }
 
+    .carrossel {
+        width: 100%;
+    
+    }
+    
+    .carrossel-container {
+        max-width: 100%;
+    }
+    
     .carrossel-container img {
-        width: 350px;
-        height: auto;
+        max-width: 100%;
+    
     }
 
     .footer {
@@ -683,6 +689,7 @@ textarea {
         text-decoration: none;
         color: #ffffff;
         font-size: 18px;
+        height: 40px;
         width: 50%;
         /* Faz os links ocuparem toda a largura do menu */
         box-sizing: border-box;
@@ -692,6 +699,7 @@ textarea {
 
     .bt {
         left: 0;
+        height: 40px;
     }
 
     .nav-links a:hover {
