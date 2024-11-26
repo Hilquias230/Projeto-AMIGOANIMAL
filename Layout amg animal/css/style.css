@@ -34,10 +34,10 @@ a {
 }
 
 .logo {
-    width: 120px;
+    width: 150px;
     position: relative;
-    margin-left: 50%;
-    transform: translateX(150%);
+    left: 150px;
+    top: 40px;
     
 }
 
@@ -593,9 +593,8 @@ textarea {
     }
 
     .logo {
-        width: 80px; /* Diminui o tamanho em telas menores */
-        margin-left: 20%; /* Reduz o deslocamento */
-        transform: translateX(0); /* Remove ajustes desnecessários */
+        width: 120px;
+        left: 100px;
     }
 
     nav {
@@ -653,6 +652,11 @@ textarea {
         align-items: flex-start;
         width: 100%;
         position: relative;
+    }
+    .logo {
+        width: 120px;
+        left: 1px;
+        top: 10px;
     }
 
     .nav-links {
