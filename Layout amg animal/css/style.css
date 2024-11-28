@@ -395,7 +395,7 @@ form h2 {
 .form-group input[type="password"],
 .form-group textarea,
 select {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -410,7 +410,7 @@ textarea {
 }
 
 .form-group input[type="date"] {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -526,6 +526,7 @@ textarea {
     text-align: center;
     margin-top: 10px;
     color: #dfdfdf;
+    text-wrap: nowrap;
     font-weight: bold;
 }
 
@@ -786,12 +787,12 @@ textarea {
         display: block;
         margin: 0 auto;
     }
-
+    
     .footer {
         height: auto;
         display: flex;
         padding: 20px;
-        text-align: center;
+        
     }
 
     .footer h3 {
