@@ -477,6 +477,21 @@ textarea {
 
 }
 
+.recuperar {
+    display: block;
+    margin-top: 50px;
+    color: #000000;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    width: 170px;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bolder;
+    white-space: nowrap;
+    margin-left: 20px;
+
+}
+
 .anoni {
     display: block;
     margin-top: 50px;
