@@ -22,10 +22,16 @@ a {
     position: relative;
 
 }
+.logo-container {
+    position: relative;
+    left: 70px;
+}
 
 .logo {
     width: 150px;
     height: auto;
+    border: #000000 3px solid;
+    border-radius: 100px;
     
 }
 
@@ -604,6 +610,9 @@ textarea {
         grid-template-columns: 1fr 1fr;
         height: auto;
     }
+    .logo-container {
+        left: 10px;
+    }
 
     .logo {
         width: 120px;
@@ -674,6 +683,9 @@ textarea {
         align-items: flex-start;
         width: 100%;
         position: relative;
+    }
+    .logo-container {
+        left: 5px;
     }
     .logo {
         width: 120px;
