@@ -655,7 +655,7 @@ textarea {
     .opcoes-container {
         padding: 20px;
         width: 75%;
-        height: 40%;
+        height: 30vw;
 
     }
 
@@ -817,8 +817,8 @@ textarea {
         flex-direction: column;
         align-items: center;
         padding: 15px;
-        width: 60%;
-        height: 62%;
+        max-width: auto;
+        height: 30em;
 
     }
 
