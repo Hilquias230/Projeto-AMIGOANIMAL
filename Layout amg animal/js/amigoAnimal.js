@@ -1,11 +1,4 @@
-//Segunda versão do menu(atual)
-const menu = document.querySelector('.nav-links');
-const button = document.querySelector('.menu-toggle'); // Se você tiver um botão para alternar o menu
 
-button.addEventListener('click', () => {
-    menu.classList.toggle('active');
-    button.classList.toggle('active');
-});
 
 //Primeira versão do menu
 // document.addEventListener('DOMContentLoaded', () => {
@@ -20,6 +13,15 @@ button.addEventListener('click', () => {
 //         });
 //     }
 // });
+
+//Segunda versão do menu(atual)
+const menu = document.querySelector('.nav-links');
+const button = document.querySelector('.menu-toggle'); // Se você tiver um botão para alternar o menu
+
+button.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    button.classList.toggle('active');
+});
 
 
 
@@ -38,5 +40,8 @@ const moveSlide = (direction) => {
 // Adiciona os eventos de clique para os botões
 document.querySelector('.Ant').addEventListener('click', () => moveSlide(-1));
 document.querySelector('.Prox').addEventListener('click', () => moveSlide(1));
+
+
+
 
 
