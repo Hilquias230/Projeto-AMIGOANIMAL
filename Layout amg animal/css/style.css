@@ -400,6 +400,7 @@ form h2 {
 .form-group input[type="file"],
 .form-group input[type="email"],
 .form-group input[type="password"],
+.form-group input[type="tel"],
 .form-group textarea,
 select {
     width: 95%;
