@@ -93,7 +93,7 @@ nav a {
     background-color: #000000;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
     border-radius: 5px;
-    width: 125px;
+    width: 140px;
     height: 25px;
     padding: 10px;
     text-align: center;
@@ -178,8 +178,8 @@ nav a:hover {
 .carrossel {
     position: relative;
     top: 20px;
-    width: 100%;
-    margin: 0;
+    width: 70%;
+    margin: 0 auto;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -246,7 +246,7 @@ button.Prox:hover {
 }
 
 .conteudo .sec {
-    width: 100%;
+    width: 90%;
     max-width: 113em;
     padding: 20px;
     background-color: #ffffff;
